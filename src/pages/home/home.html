@@ -11,4 +11,13 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
+  <p>
+    <button (click)="click(1)">Select 1</button>
+    <button (click)="click(2)">Select 2</button>
+    <label *ngIf="selected == 1">1 selected</label>
+    <label *ngIf="selected == 2">2 selected</label>
+  </p>
+  <p>
+    <a [navPush]="'page2'">go to page 2</a>
+  </p>
 </ion-content>
